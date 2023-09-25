@@ -153,6 +153,12 @@ body{
     display:block;
     text-align: center;
   }
+  .abtext{
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
 
   .im img{
     height: 400px;
