@@ -177,9 +177,10 @@ body{
       .welcome{
     width: 100%;
     height: auto;
-    background-color: black;
-    color: #fff;
-    text-align: center;
+  }
+      .welcome h1{
+    margin: auto;
+    padding: 30px;
   }
     
   }
