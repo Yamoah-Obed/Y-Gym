@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamoah-Gym</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2fb0a02a4b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Pages/Facilities.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+    <div class="fullpage">
+        <nav class="navbar" id="navbar">
+            <a class="navbar-logo" href="#">Y-Gym</a>
+            
+            <div class="navbar-links">
+              <a class="navbar-link" href="#" onclick="closeNavbar(),toggleActive(this)">HOME</a>
+              <a class="navbar-link" href="./Pages/Training.html" onclick="closeNavbar(),toggleActive(this)">TRAINING</a>
+              <a class="navbar-link" href="./Pages/Facilities.html" onclick="closeNavbar(),toggleActive(this)">FACILITIES</a>
+              <a class="navbar-link" href="./Pages/Trainers.html" onclick="closeNavbar(),toggleActive(this)">TRAINERS</a>
+              <a class="navbar-link" href="./Pages/About.html" onclick="closeNavbar(),toggleActive(this)">ABOUT </a>
+              <a class="navbar-link" href="./Pages/Contact.html" onclick="closeNavbar(),toggleActive(this)">CONTACT</a>
+
+          </div>
+
+          <div class="join">
+            <a href="./Pages/join.html"><button>JOIN US</button></a>
+          </div>
+
+          <div class="toggle-button" onclick="toggleNavbar()">
+            <i class="fa fa-bars"></i>
+        </div>
+        </nav>
+        <script>
+          let isNavbarOpen = false;
+    
+          function toggleNavbar() {
+              const navbarLinks = document.querySelector('.navbar-links');
+              if (!isNavbarOpen) {
+                  navbarLinks.classList.add('active');
+              } else {
+                  navbarLinks.classList.remove('active');
+              }
+              isNavbarOpen = !isNavbarOpen;
+          }
+    
+          function closeNavbar() {
+                const navbarLinks = document.querySelector('.navbar-links');
+                navbarLinks.classList.remove('active');
+                isNavbarOpen = false;}
+    
+          function toggleActive(clickedLink) {
+            const links = document.querySelectorAll(".navbar-link");
+             links.forEach(function (link) {
+                link.classList.remove('active-link');
+                });
+                clickedLink.classList.add('active-link');
+            }   
+            
+            
+    
+    
+    
+      </script>
+
+
+
+ <script>
+  function toggleNavbarBackground() {
+    if (window.scrollY > 0) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+}
+
+window.addEventListener('scroll', toggleNavbarBackground);
+
+toggleNavbarBackground();
+ </script>
+
+
+
+<section class="HomeContainer" style="background-image: url('./assets/pexels-marcus-chan-17898141.jpg') ;"  id="Home">
+    <div class="leftSide">
+      <div class="homeText">
+        <h1>YAMOAH's<span style="color: red;"> 24 </span> HOURS <span style="color: red;">GYM</span></h1>
+        <p style="color: rgb(194, 8, 8);">“The real workout starts when you want to stop.” – Ronnie Coleman</p>
+      </div>
+        <a href="./Pages/join.html"><button class="btn"> JOIN US NOW </button></a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="welcome">
+    <h1>WELCOME TO THE LEADING GYM IN GHANA</h1>
+  </div>
+
+  <div class="subtraining">
+    <div class="TrainersContainer">
+      <div class="Trainers-head" style="margin-bottom: 10px;">
+          <h1 style="color: black;">TYPE OF TRAINING AT Y-GYM</h1>
+      </div>
+      <div class="TrainersList">
+          <div class="trainer">
+              <div><img src="./assets/pexels-oluremi-adebayo-2908175.jpg" alt=""> </div>
+          <div>
+              <h2>WEIGHT LOSS</h2>
+              <p>Revitalize the body, relax the mind and reduce stress.</p>
+          </div>
+          </div>
+  
+  
+          <div class="trainer">
+              <div><img src="./assets/pexels-pixabay-38630.jpg" alt=""> </div>
+          <div>
+              <h2>GROUP TRAINING</h2>
+              <p>Revitalize the body, relax the mind and reduce stress.</p>
+          </div>
+          </div>
+  
+  
+          <div class="trainer">
+              <div><img src="./assets/pexels-pixabay-38630.jpg" alt=""> </div>
+          <div>
+              <h2>BODY BUILDING</h2>
+              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex at velit nihil aperiam et nostrum aliquam dolorum vel dolore nesciunt?</p>
+          </div>
+          </div> 
+      </div> 
+      <div><a href="./Pages/Training.html"><button>View All Amenities</button></a></div>
+  </div>
+    
+
+  <div class="welcome2">
+    <h1>GET BACK TO FORM <span style="color: red;">!</span></h1>
+    <h2>REASONS TO JOIN OUR <span style="color: red;">GYM</span></h2>
+    <hr>
+    <div class="reasons">
+      <p><i class="fa-solid fa-user-group" style="font-size: 30px;"></i> &nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos vel quod expedita, in sapiente eius natus adipisci minima possimus odit molestiae, aspernatur neque suscipit, accusantium perspiciatis facere rerum molestias? Tempora?</p>
+      <p><i class="fa-solid fa-user-group" style="font-size: 30px;"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos vel quod expedita, in sapiente eius natus adipisci minima possimus odit molestiae, aspernatur neque suscipit, accusantium perspiciatis facere rerum molestias? Tempora?</p>
+      <p><i class="fa-solid fa-user-group" style="font-size: 30px;"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos vel quod expedita, in sapiente eius natus adipisci minima possimus odit molestiae, aspernatur neque suscipit, accusantium perspiciatis facere rerum molestias? Tempora?</p>
+      <p><i class="fa-solid fa-user-group" style="font-size: 30px;"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos vel quod expedita, in sapiente eius natus adipisci minima possimus odit molestiae, aspernatur neque suscipit, accusantium perspiciatis facere rerum molestias? Tempora?</p>
+      <p><i class="fa-solid fa-user-group" style="font-size: 30px;"></i>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos vel quod expedita, in sapiente eius natus adipisci minima possimus odit molestiae, aspernatur neque suscipit, accusantium perspiciatis facere rerum molestias? Tempora?</p>
+    </div>
+  </div>
+
+  <div class="classShedule">
+    <h1>SPECIAL CLASS SCHEDULES</h1>
+    <div class="specialclassList">
+      <div class="specialclass">
+          <div><i class="fa-regular fa-calendar"></i></div>
+      <div>
+          <h2>MONDAY</h2>
+          <p >Afro-Beat Dance: <span>7:00pm - 8:00pm</span></p>
+      </div>
+      </div>
+
+        <div class="specialclass">
+            <div><i class="fa-regular fa-calendar"></i></div>
+        <div>
+            <h2>TUESDAY</h2>
+            <p >Afro-Beat Dance: <span>7:00pm - 8:00pm</span></p>
+        </div>
+        </div>
+
+          <div class="specialclass">
+              <div><i class="fa-regular fa-calendar"></i></div>
+          <div>
+              <h2>WEDNESDAY</h2>
+              <p >Body Combat: <span>7:00pm - 8:00pm</span></p>
+          </div>
+          </div>
+
+            <div class="specialclass">
+                <div><i class="fa-regular fa-calendar"></i></div>
+            <div>
+                <h2>FRIDAY</h2>
+                <p >Afro-Beat Dance(KIDS): <span>7:00pm - 8:00pm</span></p>
+            </div>
+            </div>
+
+              <div class="specialclass">
+                  <div><i class="fa-regular fa-calendar"></i></div>
+              <div>
+                  <h2>SATURDAY</h2>
+                  <p >Martial arts: <span>7:00pm - 8:00pm</span></p>
+              </div>
+              </div>
+
+  </div>
+</section>
+
+<div class="Footer">
+  <div class="FooterIconLink">
+    <a href="" class="FooterIconLink">
+      <i class="fa-brands fa-github" style="color: rgb(72, 72, 90);font-size: 38px;"></i>
+    </a>
+    <a href="" class="IconLink">
+      <i class="fa-brands fa-linkedin" style="color: rgb(72, 72, 90);font-size: 38px;"></i>
+    </a>
+    <a href="" class="IconLink">
+      <i class="fa-solid fa-envelope" style="color: rgb(72, 72, 90);font-size: 38px;"></i>
+    </a>
+    <a href="" class="IconLink">
+      <i class="fa-brands fa-twitter" style="color: rgb(72, 72, 90); font-size: 38px;"></i>
+    </a>
+  </div>
+
+  <div class="footerText">
+    <p>
+      <i class="fa-regular fa-copyright"></i> 2023 Yamoah.com
+    </p>
+  </div>
+
+</div>
+    
+    
+</body>
+</html>

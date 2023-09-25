@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamoah-Gym</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2fb0a02a4b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Trainers.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../Pages/Contact.css">
+</head>
+<body>
+    <div class="fullpage">
+        <nav class="tnavbar" id="navbar">
+            <a class="tnavbar-logo" href="#">Y-Gym</a>
+            
+            <div class="tnavbar-links">
+              <a class="tnavbar-link" href="../index.html" onclick="closeNavbar(),toggleActive(this)">HOME</a>
+              <a class="tnavbar-link" href="../Pages/Training.html" onclick="closeNavbar(),toggleActive(this)">TRAINING</a>
+              <a class="tnavbar-link" href="../Pages/Facilities.html" onclick="closeNavbar(),toggleActive(this)">FACILITIES</a>
+              <a class="tnavbar-link" href="../Pages/Trainers.html" onclick="closeNavbar(),toggleActive(this)">TRAINERS</a>
+              <a class="tnavbar-link" href="../Pages/About.html" onclick="closeNavbar(),toggleActive(this)">ABOUT </a>
+              <a class="tnavbar-link" href="../Pages/Contact.html" onclick="closeNavbar(),toggleActive(this)" style="color: red;">CONTACT</a>
+
+          </div>
+
+          <div class="tjoin">
+            <a href="./join.html"><button>JOIN US</button></a>
+          </div>
+
+          <div class="ttoggle-button" onclick="toggleNavbar()">
+            <i class="fa fa-bars"></i>
+        </div>
+        </nav>
+
+        <script>
+            let isNavbarOpen = false;
+      
+            function toggleNavbar() {
+                const navbarLinks = document.querySelector('.tnavbar-links');
+                if (!isNavbarOpen) {
+                    navbarLinks.classList.add('active');
+                } else {
+                    navbarLinks.classList.remove('active');
+                }
+                isNavbarOpen = !isNavbarOpen;
+            }
+      
+            function closeNavbar() {
+                  const navbarLinks = document.querySelector('.tnavbar-links');
+                  navbarLinks.classList.remove('active');
+                  isNavbarOpen = false;}
+      
+            function toggleActive(clickedLink) {
+              const links = document.querySelectorAll(".tnavbar-link");
+               links.forEach(function (link) {
+                  link.classList.remove('active-link');
+                  });
+                  clickedLink.classList.add('active-link');
+              }   
+              
+              
+      
+      
+      
+        </script>
+
+<section class="Contact" id="Contact">
+    <div class="ContactContainer">
+      <div class="ContactTitle">
+        <h2>CONTACT US</h2>
+      </div>
+    </div>
+    <div class="lrinfo">
+      <form id="contact-form">
+        <input
+          placeholder="Name"
+          type="text"
+          id="name"
+          name="name"
+          required
+        />
+
+        <input
+          placeholder="E-mail"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+
+        <textarea
+          placeholder="Text......"
+          id="message"
+          name="message"
+          rows="9"
+          required
+        ></textarea>
+
+        <button class="submit" type="submit">
+          Send
+        </button>
+      </form>
+      <div class="othercontact">
+        <h1 style="color: red; font-size: 40px;">OTHER CONTACTS</h1>
+        <div><i class="fa-brands fa-whatsapp" style="font-size: 40px;"></i> <h2>0241597506</h2></div>
+        <div><i class="fa-brands fa-instagram" style="font-size: 40px;"></i> <h2>Local_Rest</h2> </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<div class="Footer">
+    <div class="FooterIconLink">
+      <a href="" class="FooterIconLink">
+        <i class="fa-brands fa-github" style="color: rgb(72, 72, 90);font-size: 38px;"></i>
+      </a>
+      <a href="" class="IconLink">
+        <i class="fa-brands fa-linkedin" style="color: rgb(72, 72, 90);font-size: 38px;"></i>
+      </a>
+      <a href="" class="IconLink">
+        <i class="fa-solid fa-envelope" style="color: rgb(72, 72, 90);font-size: 38px;"></i>
+      </a>
+      <a href="" class="IconLink">
+        <i class="fa-brands fa-twitter" style="color: rgb(72, 72, 90); font-size: 38px;"></i>
+      </a>
+    </div>
+  
+    <div class="footerText">
+      <p>
+        <i class="fa-regular fa-copyright"></i> 2023 Yamoah.com
+      </p>
+    </div>
+
+
+</div>
+
+</body>
+</html>
